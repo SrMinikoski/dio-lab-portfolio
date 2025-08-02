@@ -286,6 +286,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   gap: .5rem;
+  max-width: 30vw;
 }
 
 .technologies__item {
@@ -665,7 +666,7 @@ footer p {
 
 @media (min-width: 1400px) {
   h1 {
-    font-size: 6.25rem;
+    font-size: 4.25rem;
   }
 
   h2 {
