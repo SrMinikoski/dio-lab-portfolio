@@ -116,6 +116,16 @@ h3 {
   font-weight: 200;
 }
 
+
+#formacao * {
+  text-align: center;
+  align-self: center;
+}
+
+.about__icons {
+  align-self: center;
+}
+
 p,
 span,
 li {
@@ -123,7 +133,19 @@ li {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
+  margin: auto;
+}
+
+.card__description {
+  margin: 0;
+}
+
+q {
+  text-align: center;
+  margin: -10px auto;
+  font-style: italic;
+  opacity: .5;
 }
 
 .header {
@@ -210,10 +232,12 @@ p {
 
 .menu--principal {
   gap: 1rem;
+
 }
 
 .menu--social {
   gap: 1rem;
+  margin: auto;
 }
 
 .btn {
@@ -231,9 +255,26 @@ p {
   color: var(--primary-color);
 }
 
-.btn:hover {
+
+.btn:hover,
+.menu__link:hover {
   transform: scale(1.05);
   transition: ease-in-out .3s;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 83%;
+  background: transparent;
+  border-radius: 500rem;
+  border: solid 1px var(--primary-color);
+  padding: 0.875rem 1.5rem;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .btn span,
@@ -261,6 +302,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  padding: 12rem 6rem 7rem 6rem;
+
 }
 
 .main__content1 {
@@ -283,6 +327,10 @@ main {
   padding: 6.25rem 1rem 2rem;
   background: var(--secondary-bg-color);
   margin-top: -5.5rem;
+}
+
+.projects {
+  padding: 2rem 6rem !important;
 }
 
 .technologies h2 {
@@ -343,8 +391,8 @@ main {
 .card__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -442,6 +490,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  align-self: center;
   gap: 2rem;
 }
 
@@ -544,8 +593,12 @@ footer p {
     background: var(--primary-bg-color);
   }
 
+  .projects {
+    padding: 12rem 6rem 1rem 6rem;
+  }
+
   .about__photo {
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
   }
 
@@ -573,8 +626,9 @@ footer p {
   main,
   .projects,
   .about {
-    padding: 8rem 6rem 4rem 6rem;
+    padding: 12rem 6rem 7rem 6rem;
   }
+
 
   .contact {
     padding: 6rem;
@@ -603,6 +657,15 @@ footer p {
 @media (min-width: 992px) {
   .projects__card {
     flex-direction: row;
+  }
+
+  .projects {
+    padding: 12rem 6rem 1rem 6rem;
+  }
+
+  .about__photo {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .projects__card.card--reverse {
@@ -646,8 +709,12 @@ footer p {
     font-size: 2.5rem;
   }
 
+  .projects {
+    padding: 12rem 6rem 1rem 6rem;
+  }
+
   main {
-    padding: 12rem 6rem 2rem;
+    padding: 12rem 6rem 7rem 6rem;
   }
 
   .main__content1 .btn {
@@ -693,53 +760,66 @@ footer p {
 @media (min-width: 1400px) {
   h1 {
     font-size: 4.25rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .projects {
+    padding: 12rem 6rem 1rem 6rem;
+  }
+
+  .about__photo {
+    width: 80%;
+    margin: 0 auto;
   }
 
   h2 {
     font-size: 4.5rem;
+
   }
 
   h3 {
     font-size: 3.25rem;
+
+
   }
+
+  #cursos,
+  #sobremim {
+    text-align: center;
+  }
+
+
 
   .header {
     padding: 1rem 15rem;
   }
 
   main {
-    padding: 12rem 15rem 2rem;
+    padding: 12rem 6rem 7rem 6rem;
   }
 
   .technologies,
   .projects,
   .about {
-    padding: 10rem 15rem 4rem;
+    padding: 1rem 15rem 4rem;
   }
 
 }
+
 /* Animação para os cards de projeto */
 .projects__card {
-    transition: all 0.2s ease-out;
-    will-change: transform, opacity; 
+  transition: all 0.2s ease-out;
+  will-change: transform, opacity;
 }
 
 .projects__card.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about__photo {
-    will-change: transform, opacity;
-    transform-origin: center; 
-    border-radius: 50%; 
+  will-change: transform, opacity;
+  transform-origin: center;
+  border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-

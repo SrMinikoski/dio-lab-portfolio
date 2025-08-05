@@ -83,23 +83,25 @@
       <p>João Minikoski, Londrina-PR, Full-Stack Developer, IT Technician & Software Eng. Student</p>
       <ul class="menu menu--social">
         <li>
-          <a class="menu__link" href="https://github.com/SrMinikoski" target="_blank">
+          <a class="menu__link botao" href="https://github.com/SrMinikoski" target="_blank">
             <i class="menu__icon bi bi-github"></i>
           </a>
         </li>
         <li>
-          <a class="menu__link" href="https://www.linkedin.com/in/joao-lucas-andrade-58284b1ba/" target="_blank">
+          <a class="menu__link botao" href="https://www.linkedin.com/in/joao-lucas-andrade-58284b1ba/" target="_blank">
             <i class="menu__icon bi bi-linkedin"></i>
           </a>
         </li>
-
+        <li>
+          <a href="#projetos">
+            <button class="btn btn--primary">
+              <span>Ver Projetos</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </button>
+          </a>
+        </li>
       </ul>
-      <a href="#projetos">
-        <button class="btn btn--primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
-      </a>
+
     </div>
     <div class="main__content2">
       <iframe src="https://www.youtube.com/embed/BeB_yUPLQkE?si=T-RLiRgM84EjZaLe" title="YouTube video player"
@@ -175,8 +177,9 @@
               <span>Prévia</span>
               <i class="bi bi-arrow-up-right"></i>
             </button>
-            <button class="btn">
-              <span>Repositório</span>
+            <button class="btn" href="">
+              <span><a href="https://github.com/SrMinikoski/ProjetoFinal-AcademiaJava"
+                  target="_blank">Repositório</a></span>
             </button>
           </div>
         </div>
@@ -214,7 +217,8 @@
               <i class="bi bi-arrow-up-right"></i>
             </button>
             <button class="btn">
-              <span>Repositório</span>
+              <span><a href="https://github.com/SrMinikoski/Crud-SpringSecurity-Style"
+                  target="_blank">Repositório</a></span>
             </button>
           </div>
         </div>
@@ -254,7 +258,7 @@
               <i class="bi bi-arrow-up-right"></i>
             </button>
             <button class="btn">
-              <span>Repositório</span>
+              <span><a href="https://github.com/SrMinikoski/AnimacaoCSS" target="_blank">Repositório</a></span>
             </button>
           </div>
         </div>
@@ -274,7 +278,7 @@
     <div class="about__content1">
       <img class="about__photo" src="assets/images/avatar.jpg" alt="">
       <div class="about__description">
-        <h2>Sobre mim</h2>
+        <h2 id="sobremim">Sobre mim</h2>
         <p>João Minikoski. Estudante de tecnologia, aspirante a desenvolvedor e artista hobista. Tendo contato com a
           tecnologia desde criança, tentando aprender a consertar computadores. Iniciei efetivamente minha jornada na
           área de tecnologia em 2019, tendo meu primeiro contato com a programação através de um curso de robótica com
@@ -304,8 +308,9 @@
         </div>
       </div>
     </div>
-    <div class="about__content2">
-      <div class="col1">
+
+    <div class="about__content2" >
+      <div class="col1" id="formacao">
         <div class="row1">
           <h3>Formação</h3>
           <h4>Engenharia de Software</h4>
@@ -322,6 +327,7 @@
           <span>Responsável por atendimento e suporte ao usuário, resolução de problemas, tratativa de chamados,
             gerenciamento de acessos e sistemas, tratativas via e-mail e ligações.
           </span>
+          <br>
           <ul class="about__list">
             <li class="about__item">Gestão de Acessos</li>
             <li class="about__item">Solução de Prblemas Técnicos</li>
@@ -330,9 +336,8 @@
         </div>
       </div>
       <div class="col2">
-        <h3>Cursos</h3>
+        <h3 id="cursos">Cursos</h3>
         <div id="accordion">
-
           <div class="accordion__item">
             <button class="accordion__header start">
               <span>Robolon 2019</span>
@@ -411,10 +416,9 @@
               </p>
             </div>
           </div>
-
-
-
-
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contato" class="contact">
