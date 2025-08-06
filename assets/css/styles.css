@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mea+Culpa&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root,
 :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
 
-  --primary-bg-color: #111217;
-  --secondary-bg-color: #28292E;
-  --primary-border-color: #28292E;
-  --secondary-border-color: #56575A;
+  --primary-bg-color: #171111;
+  --secondary-bg-color: #2e2828;
+  --primary-border-color: #702828;
+  --secondary-border-color: rgb(155, 19, 19);
 
   --title-color: #F0F0F0;
-  --text-color: #9A9A9C;
+  --text-color: #9c9a9a;
   --link-color: #9A9A9C;
-  --icon-color: #C7C8C9;
+  --icon-color: #c9c7c7;
 }
 
 :root[data-theme='light'] {
   --primary-color: #0B0B0F;
 
-  --primary-bg-color: #E9E9E9;
-  --secondary-bg-color: #C7C8C9;
-  --primary-border-color: #C7C8C9;
-  --secondary-border-color: #9A9A9C;
+  --primary-bg-color: #e1e1ee;
+  --secondary-bg-color: #b3b3c4;
+  --primary-border-color: #253da8;
+  --secondary-border-color: #212181;
 
   --title-color: #0B0B0F;
   --text-color: #28292E;
@@ -30,12 +31,13 @@
   --icon-color: #56575A;
 }
 
+
 html[data-theme='light'] .brand__logo {
   filter: invert(1);
 }
 
 html[data-theme='light'] .technologies__logo {
-  filter: invert(80%);
+  filter: invert(100%);
 }
 
 * {
@@ -50,7 +52,7 @@ html[data-theme='light'] .technologies__logo {
 
 body {
   background: var(--primary-bg-color);
-  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
 }
 
@@ -110,10 +112,10 @@ h4 {
 h1,
 h2,
 h3 {
-  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   color: var(--title-color);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 
@@ -253,6 +255,7 @@ q {
   transition: ease-in-out .3s;
   cursor: pointer;
   color: var(--primary-color);
+  background-color: var(--secondary-bg-color);
 }
 
 
@@ -270,13 +273,16 @@ q {
   width: 83%;
   background: transparent;
   border-radius: 500rem;
-  border: solid 1px var(--primary-color);
+  border: solid 1px var(--primary-border-color);
   padding: 0.875rem 1.5rem;
   transition: ease-in-out .3s;
   cursor: pointer;
   color: var(--primary-color);
+  background-color: var(--secondary-bg-color);
 }
-
+.repo {
+  background-color: transparent !important;
+}
 .btn span,
 .btn i {
   font-size: 1.25rem;
@@ -288,7 +294,7 @@ q {
 }
 
 .btn--primary {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-border-color);
 }
 
 main,
@@ -312,10 +318,15 @@ main {
   flex-direction: column;
   gap: 1.5rem;
 }
+.main__content2{
+  text-align: center;
+}
 
 .main__content2 iframe {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 16/9;
+  border-radius: 50px;
+  border: solid 2px var(--primary-border-color);
 }
 
 .technologies {
@@ -332,6 +343,8 @@ main {
 .projects {
   padding: 2rem 6rem !important;
 }
+
+
 
 .technologies h2 {
   font-size: 2rem;
@@ -645,8 +658,7 @@ footer p {
   }
 
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
+    padding: 6.25rem 6rem 6.25rem 6rem;
   }
 
   footer {
@@ -802,7 +814,7 @@ footer p {
   .technologies,
   .projects,
   .about {
-    padding: 1rem 15rem 4rem;
+    padding: 2rem 15rem 2rem;
   }
 
 }
